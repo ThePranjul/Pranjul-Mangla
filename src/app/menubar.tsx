@@ -2,12 +2,11 @@
 
 import image_1 from "../../public/color wave grain.svg"
 import image_2 from "../../public/color line grain 2.svg"
-import image_5 from "../../public/color line grain 1.svg"
 import image_3 from "../../public/color line grain 1 perp.svg"
 import image_4 from "../../public/color dot grain 2.svg"
 import image_6 from "../../public/color full c grain.svg"
 import menu_image from "../../public/menu logo.svg"
-import logo_image from "../../public/dark aj logo.svg"
+import logo_image from "../../public/dark pm logo.svg"
 import Link from "next/link";
 import {Button} from "@/components/ui/button";
 import {AspectRatio} from "@/components/ui/aspect-ratio";

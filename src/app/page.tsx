@@ -8,7 +8,7 @@ export default function Home() {
             <div className="flex flex-col items-center gap-4 justify-center absolute inset-4">
                 <h1 className="text-center text-4xl font-bold tracking-tight text-gray-900 z-0">
                     {/* eslint-disable-next-line react/no-unescaped-entities */}
-                    Hey I'm <span className="z-0 name">ATISHAY JAIN</span>
+                    Hey I'm <span className="z-0 name">PRANJUL MANGLA</span>
                 </h1>
                 <p className="text-lg text-gray-600 text-center">
                     {/* eslint-disable-next-line react/no-unescaped-entities */}
