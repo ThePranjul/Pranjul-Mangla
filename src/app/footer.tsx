@@ -6,7 +6,7 @@ export default async function Footer() {
             <div className="flex flex-row menu_container justify-between text-xs">
                 <span>© Pranjul Mangla</span>
                 <Link href="/projects">
-                    Special Thanks: Atishay Jain(Graphics)
+                    Special Thanks: Atishay(Programmer)
                 </Link>
             </div>
         </footer>
