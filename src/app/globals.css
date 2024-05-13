@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 240 14.3% 96.4%;
+        --foreground: 240 20% 45%;
+
+        --card: 0 0% 100%;
+        --card-foreground: 240 10% 3.9%;
+
+        --popover: 0 0% 100%;
+        --popover-foreground: 240 10% 3.9%;
+
+        --primary: 240 5.9% 10%;
+        --primary-foreground: 0 0% 98%;
+
+        --secondary: 240 4.8% 95.9%;
+        --secondary-foreground: 240 5.9% 10%;
+
+        --muted: 240 4.8% 95.9%;
+        --muted-foreground: 240 3.8% 46.1%;
+
+        --accent: 240 4.8% 95.9%;
+        --accent-foreground: 240 5.9% 10%;
+
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+
+        --border: 240 5.9% 90%;
+        --input: 240 5.9% 90%;
+        --ring: 240 10% 3.9%;
+
+        --radius: 0.5rem;
+    }
+
+    .dark {
+        --background: 210 12% 18%;
+        --foreground: 240 14.3% 96.4%;
+
+        --card: 240 10% 3.9%;
+        --card-foreground: 0 0% 98%;
+
+        --popover: 240 10% 3.9%;
+        --popover-foreground: 0 0% 98%;
+
+        --primary: 0 0% 98%;
+        --primary-foreground: 240 5.9% 10%;
+
+        --secondary: 240 3.7% 15.9%;
+        --secondary-foreground: 0 0% 98%;
+
+        --muted: 240 3.7% 15.9%;
+        --muted-foreground: 240 5% 64.9%;
+
+        --accent: 240 3.7% 15.9%;
+        --accent-foreground: 0 0% 98%;
+
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 0 0% 98%;
+
+        --border: 240 3.7% 15.9%;
+        --input: 240 3.7% 15.9%;
+        --ring: 240 4.9% 83.9%;
+    }
+
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+.container {
+    width: 85%;
+}
+.menu_container {
+    width: 60%;
+}
+.grid_container{
+    height: 100%;
+    padding-top: 150px;
+}
+.grid_container > div {
+    width: 50%;
+    height: 100%;
+}
+
+.p_up {
+    scale: 5;
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(calc(2vw)) translateY(calc(0vh + 20px)) rotate(22deg);
+}
+.p_up_moved {
+    z-index: 40;
+    transform: scale(0.66) translateX(calc(15vw - 30px)) translateY(calc(13.5vh - 25px)) rotate(90deg);
+}
+.p_line {
+    scale: 3;
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(calc(4vw + 50px)) translateY(calc(26vh - 9px)) rotate(99deg) rotateY(0deg);
+}
+.p_line_moved {
+    z-index: 40;
+    transform: scale(0.5) translateX(calc(33.333vw - 110px)) translateY(calc(30vh - 40px)) rotateY(180deg) rotate(-10deg);
+}
+
+.m_left {
+    scale: 5;
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(calc(16vw)) translateY(calc(4vh - 10px)) rotate(100deg);
+}
+
+.m_left_moved {
+    z-index: 40;
+    transform: scale(0.5) translateX(calc(20vw - 10px)) translateY(calc(18vh + 10px)) rotate(28deg);
+}
+
+.m_right {
+    scale: 5;
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(calc(16vw)) translateY(calc(4vh + 90px)) rotate(175deg);
+}
+
+.m_right_moved {
+    z-index: 40;
+    transform: scale(0.5) translateX(calc(20vw + 40px)) translateY(calc(18vh + 10px)) rotate(208deg);
+}
+
+.m_mid {
+    scale: 2;
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(calc(20vw)) translateY(calc(2vh - 9px)) rotate(86deg);
+}
+
+.m_mid_moved {
+    z-index: 40;
+    transform: scale(0.5) translateX(calc(50vw + 35px)) translateY(calc(45vh - 30px)) rotate(0deg);
+}
+
+.m_dot {
+    scale: 3;
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(calc(0vw + 10px)) translateY(calc(15vh - 0px));
+}
+
+.m_dot_moved {
+    z-index: 40;
+    transform: scale(0.25) translateX(calc(66.666vw + 170px)) translateY(calc(60vh + 130px)) rotate(-20deg);
+}
+
+.detail_page {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+}
+
+.sec_grid_container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 5px;
+}
+@media only screen and (max-width: 820px) {
+    .container {
+        width: 95%;
+    }
+
+    .menu_container {
+        width: 95%;
+    }
+
+    .left_side{
+        display: none;
+    }
+    .detail_page {
+        grid-template-columns: 100%;
+    }
+}
+
+.name{
+    background-image: url("/wave-gif-file.gif");
+    background-position: center;
+    background-size: auto 500%; /* Height 100%, width auto */
+    background-repeat: repeat-x;
+}
